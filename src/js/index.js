@@ -7,8 +7,8 @@ mobileNav();
 // import easepick from './modules/easepick.js';
 // easepick();
 
-import swiper from './modules/swiper-popular.js';
-swiper();
+// import swiper from './modules/swiper-popular.js';
+// swiper();
 
 import swiperTestimonials from './modules/swiper-testimonials.js';
 swiperTestimonials();
