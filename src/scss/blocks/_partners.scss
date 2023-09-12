@@ -2,6 +2,10 @@
     position: relative;
     z-index: -1;
     padding: 60px 0;
+    
+    @include mediaMobile {
+        padding: 30px 0;
+    }
 }
 
 .partners__row {
@@ -9,6 +13,10 @@
     justify-content: space-between;
     align-items: center;
     gap: 30px;
+
+    @include mediaTablet {
+        flex-direction: column;
+    }
 }
 .partners__title {
     color: var(--text-muted);
@@ -21,5 +29,12 @@
 .partners__content {
     display: flex;
     align-items: center;
-    gap: 32px
+    gap: 32px;
+
+    flex-wrap: wrap;
+
+    @include mediaLaptop {
+        gap: 20px;
+        justify-content: center;
+    }
 }

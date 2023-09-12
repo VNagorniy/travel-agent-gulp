@@ -76,7 +76,7 @@
         bottom: 0;
     }
 
-    @include mediaMobile () {
+    @include mediaMobile {
         width: 30%;
     }
 }
