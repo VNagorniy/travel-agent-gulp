@@ -3,6 +3,10 @@
     padding: 80px 0;
     background-color: var(--accent);
     color: #fff;
+
+    @include mediaLaptop {
+        padding: 40px 0;
+    }
 }
 
 .subscribe__row {
@@ -25,6 +29,29 @@
 
         background-image: url("./../img/subscribe/subscribe-pin-bg.svg");
         background-repeat: no-repeat;
+
+        @include mediaTablet {
+            top: -45px;
+        }
+
+        @include mediaMobile {
+            display: none;
+        }
+    }
+
+    @include mediaTablet {
+        padding: 0 150px;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+
+        &::before {
+            top: -60px;
+        }
+    }
+
+    @include mediaMobile {
+        padding: 0;
     }
 }
 .subscribe__desc {
@@ -48,4 +75,13 @@
 
 .subscribe__form {
     flex-grow: 1;
+    min-width: 400px;
+
+    @include mediaMobile {
+        min-width: unset;
+    }
+
+    @include mediaMobileS {
+        width: 100%;
+    }
 }
