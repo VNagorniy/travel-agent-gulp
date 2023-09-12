@@ -37,7 +37,21 @@ img {
 
 		background-image: url('./../img/discover/underline.svg');
 		background-repeat: no-repeat;
+
+		@include mediaMobile () {
+			width: 184px;
+			height: 12px;
+			background-size: contain;
+		}
 	}
+
+	@include mediaTablet {
+		font-size: 52px;
+	}
+
+	@include mediaMobile () {
+        font-size: 32px;
+    }
 }
 
 .title-3 {
@@ -53,6 +67,10 @@ img {
 	font-style: normal;
 	font-weight: 450;
 	line-height: 150%; /* 27px */
+
+	@include mediaMobile () {
+		font-size: 16px;
+	}
 }
 
 .muted {

@@ -16,8 +16,4 @@
     --text-color: #fff;
 }
 
-@mixin mediaMobile () {
-	@media (max-width: 767px) {
-		@content
-	}
-}
+
