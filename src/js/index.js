@@ -1,3 +1,6 @@
+import mobileNav from './modules/mobile-nav.js';
+mobileNav();
+
 import autoCompleteFunc from './modules/autoComplete';
 autoCompleteFunc();
 
@@ -13,6 +16,3 @@ swiperTestimonials();
 import scrollReveal from './modules/scrollReveal.js';
 scrollReveal();
 
-// import mobileNav from './modules/mobile-nav.js';
-
-// mobileNav();

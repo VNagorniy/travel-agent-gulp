@@ -5,6 +5,10 @@
     align-items: center;
     gap:32px
 }
+.nav__logo {
+    flex-shrink: 0;
+}
+
 .nav__list {
     display: flex;
     justify-content: space-between;
@@ -18,9 +22,25 @@
     a:hover, a.active {
         color: #35AFF4;
     }
+
+    @include mediaMobile {
+        display: none;
+    }
 }
 
 .nav__btns {
     display: flex;
     gap: 12px;
+
+    @include mediaMobile {
+        display: none;
+    }
+}
+
+.nav__icon {
+    display: none;
+
+    @include mediaMobile {
+        display: block;
+    }
 }
