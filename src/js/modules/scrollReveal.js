@@ -7,21 +7,29 @@ ScrollReveal({
 });
 
 function scrollRevealFunc() {
-  ScrollReveal().reveal(`.header, .partners, .popular__title`, {
-    origin: 'top',
-  });
+  ScrollReveal().reveal(`.header, .partners`, {
+		distance: '0px',
+		opacity: 0,
+	});
 
-  ScrollReveal().reveal(`.discover__picture-hint, .discover__title`, {
-    origin: 'left',
-  });
+	ScrollReveal().reveal(`.discover__picture-hint`, {
+		origin: 'top',
+	});
 
-  ScrollReveal().reveal(`.discover__picture-scroll, .discover__text, .popular__controls`, {
-    origin: 'right',
-  });
+	ScrollReveal().reveal(`.discover__desc`, {
+		origin: 'left',
+	});
 
-  ScrollReveal().reveal(`.discover__form, .discover__picture-img`, {
-    origin: 'bottom',
-  });
+	ScrollReveal().reveal(
+		`.discover__picture-img`,
+		{
+			origin: 'right',
+		}
+	);
+
+	ScrollReveal().reveal(`.discover__picture-scroll`, {
+		origin: 'bottom',
+	});
 }
 
 export default scrollRevealFunc;
